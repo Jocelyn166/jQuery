@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $('document').ready(function(){
+           $('#create_text').click(function(){
+               $('#container p:last').text('Replaced and created this text')
+           });
+           $('#create_variable').click(function(){
+               var newText = $('#container p:first');
+               $('#container p:last').html(newText);
+           });
+
+        });
+    </script>
+</head>
+<body>
+    <a href="#" id="create">Create</a>
+    <br>
+    <a href="#" id="create_text">Create Text</a>
+    <br>
+    <a href="#" id="create_variable">Create variable Text</a>
+   
+    <div id="container">
+        <p>First: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, blanditiis. Eos, quae aliquam maxime itaque eligendi iste harum quo molestiae autem doloremque est quaerat tempore in, quia facere placeat officia.</p>
+        <p>Second: ipsum dolor sit amet consectetur adipisicing elit. Vero, blanditiis. Eos, quae aliquam maxime itaque eligendi iste harum quo molestiae autem doloremque est quaerat tempore in, quia facere placeat officia.</p>
+        <p>Third: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, blanditiis. Eos, quae aliquam maxime itaque eligendi iste harum quo molestiae autem doloremque est quaerat tempore in, quia facere placeat officia.</p>
+        <p>Last: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, blanditiis. Eos, quae aliquam maxime itaque eligendi iste harum quo molestiae autem doloremque est quaerat tempore in, quia facere placeat officia.</p>
+        
+    </div>
+
+
+</body>
+</html>

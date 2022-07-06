@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $('document').ready(function(){
+           $('#append').click(function(){
+               $('p:first').append('I just appended some copy');
+           });
+           $('#prepend').click(function(){
+               $('p:first').prepend('I just prepended some copy');
+           });
+
+        });
+    </script>
+</head>
+<body>
+   <a href="#" id="append">Append</a>
+   <a href="#" id="prepend">Preppend</a>
+   
+    <div id="container">
+        <p>First: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, blanditiis. Eos, quae aliquam maxime itaque eligendi iste harum quo molestiae autem doloremque est quaerat tempore in, quia facere placeat officia.</p>
+        <p>Second: ipsum dolor sit amet consectetur adipisicing elit. Vero, blanditiis. Eos, quae aliquam maxime itaque eligendi iste harum quo molestiae autem doloremque est quaerat tempore in, quia facere placeat officia.</p>
+        <p>Third: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, blanditiis. Eos, quae aliquam maxime itaque eligendi iste harum quo molestiae autem doloremque est quaerat tempore in, quia facere placeat officia.</p>
+        <p>Last: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, blanditiis. Eos, quae aliquam maxime itaque eligendi iste harum quo molestiae autem doloremque est quaerat tempore in, quia facere placeat officia.</p>
+        
+    </div>
+
+
+</body>
+</html>

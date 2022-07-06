@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $('document').ready(function(){
+           $('#add-class').click(function(){
+               $('p:first').addClass('color');
+           });
+           $('#remove-class').click(function(){
+               $('p:first').removeClass('color');
+           });
+           $('#toggle-class').click(function(){
+               $('p:first').toggleClass('color');
+           });
+           $('#increase-class').click(function(){
+               $('p:first').css('font-size','+=1px');
+           });
+        });
+    </script>
+
+    <style>
+        .color{
+            color:aqua;
+        }
+      
+    </style>
+</head>
+<body>
+    <a href="#" id="add-class">Add class</a>
+    <a href="#" id="remove-class">Remove class</a>
+    <a href="#" id="toggle-class">Toggle class</a>
+    <a href="#" id="increase-class">Increase class</a>
+    <div id="container">
+        <p>First: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, blanditiis. Eos, quae aliquam maxime itaque eligendi iste harum quo molestiae autem doloremque est quaerat tempore in, quia facere placeat officia.</p>
+        <p>Second: ipsum dolor sit amet consectetur adipisicing elit. Vero, blanditiis. Eos, quae aliquam maxime itaque eligendi iste harum quo molestiae autem doloremque est quaerat tempore in, quia facere placeat officia.</p>
+        <p>Third: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, blanditiis. Eos, quae aliquam maxime itaque eligendi iste harum quo molestiae autem doloremque est quaerat tempore in, quia facere placeat officia.</p>
+        <p>Last: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, blanditiis. Eos, quae aliquam maxime itaque eligendi iste harum quo molestiae autem doloremque est quaerat tempore in, quia facere placeat officia.</p>   
+    </div>

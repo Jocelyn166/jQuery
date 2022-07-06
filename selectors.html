@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $('document').ready(function(){
+           $('div>p').css('border','2px solid blue');
+           $('div>p.fourth-para').css('backgroundColor','red');
+           $('#box ~ ul').css('backgroundColor','green');
+           $('p:first-child').css('border','1px solid red');
+             $('p:last-of-type').css('border','3px dotted green');
+             $('p:contains("Lorem")').css('backgroundColor','aqua');
+             $('p:nth-child(3)').css('backgroundColor','yellow');
+        });
+    </script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, blanditiis. Eos, quae aliquam maxime itaque eligendi iste harum quo molestiae autem doloremque est quaerat tempore in, quia facere placeat officia.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, blanditiis. Eos, quae aliquam maxime itaque eligendi iste harum quo molestiae autem doloremque est quaerat tempore in, quia facere placeat officia.</p>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, blanditiis. Eos, quae aliquam maxime itaque eligendi iste harum quo molestiae autem doloremque est quaerat tempore in, quia facere placeat officia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, blanditiis. Eos, quae aliquam maxime itaque eligendi iste harum quo molestiae autem doloremque est quaerat tempore in, quia facere placeat officia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, blanditiis. Eos, quae aliquam maxime itaque eligendi iste harum quo molestiae autem doloremque est quaerat tempore in, quia facere placeat officia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, blanditiis. Eos, quae aliquam maxime itaque eligendi iste harum quo molestiae autem doloremque est quaerat tempore in, quia facere placeat officia.</p>
+        <p class="fourth-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, blanditiis. Eos, quae aliquam maxime itaque eligendi iste harum quo molestiae autem doloremque est quaerat tempore in, quia facere placeat officia.</p>
+    </div>
+    <ul>
+        <li><a href="">home</a></li>
+        <li><a href="">home</a></li>
+        <li><a href="">home</a></li>
+        <li><a href="">home</a></li>
+        <li><a href="">home</a></li>
+    </ul>
+
+    <div id="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, blanditiis. Eos, quae aliquam maxime itaque eligendi iste harum quo molestiae autem doloremque est quaerat tempore in, quia facere placeat officia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, blanditiis. Eos, quae aliquam maxime itaque eligendi iste harum quo molestiae autem doloremque est quaerat tempore in, quia facere placeat officia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, blanditiis. Eos, quae aliquam maxime itaque eligendi iste harum quo molestiae autem doloremque est quaerat tempore in, quia facere placeat officia.</p>
+        <p class="last">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, blanditiis. Eos, quae aliquam maxime itaque eligendi iste harum quo molestiae autem doloremque est quaerat tempore in, quia facere placeat officia.</p>
+        
+    </div>
+
+    <ul>
+        <li><a href="">home</a></li>
+        <li><a href="">home</a></li>
+        <li><a href="">home</a></li>
+        <li><a href="">home</a></li>
+        <li><a href="">home</a></li>
+    </ul>
+</body>
+</html>

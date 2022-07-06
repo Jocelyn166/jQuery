@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $('document').ready(function(){
+            $('#grow').click(function(){
+                $('#textBox').animate({width:'1000px'},2000);
+            });
+            $('#move').click(function(){
+                $('#textBox').animate({marginLeft:'200px'},1000);
+            });
+            $('#bigger').click(function(){
+                $('#textBox').animate({fontSize:'50px'},1000);
+            });
+            $('#manyThings').click(function(){
+                $('#textBox').animate({fontSize:'50px', marginLeft:"400px", width:"600px"},1000);
+            });
+        });
+    </script>
+    <style>
+        #textBox{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: absolute;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <a href="#" id="grow">Grow</a>
+    <a href="#" id="move">Move</a>
+    <a href="#" id="bigger">Bigger</a>
+    <a href="#" id="manyThings">ManyThings</a>
+   
+   <div id="textBox">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi beatae possimus sed tempora? Officia nesciunt cupiditate necessitatibus rerum corporis exercitationem molestiae architecto ipsam sunt! Culpa vitae consequatur minima a perferendis.
+   </div>
+</body>
+</html>
