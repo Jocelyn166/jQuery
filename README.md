@@ -26,8 +26,8 @@ Use jQuery to accomplish following functions:
 
 12.Inserting content
 
-13. Modifying content
+13.Modifying content
 
-14. Modifying CSS
+14.Modifying CSS
 
 Hope you enjoy too!
